@@ -31,7 +31,11 @@ const Users = db.define('user', {
 
 const Posts = db.define('post', {
     id: COL_ID_DEF,
-    title: COL_TITLE_DEF
+    title: COL_TITLE_DEF,
+    body: {
+        type: Sequelize.DataTypes.TEXT,
+        allowNull: false
+    }
 })
 
 const Comments = db.define('comment', {
