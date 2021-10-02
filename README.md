@@ -25,3 +25,33 @@ src
 └───routes              # express middlewares (route wise)
 ```
 
+## Business Logic
+
+### Users
+
+1. **Create users** 
+    This will create a new user with a random username
+
+### Posts
+1. **Create Posts** 
+    this will create a new post, required fields are
+    - username (the autor of this post)
+    - title
+    - body
+
+2. **Show all Posts** 
+    List all existing posts, we should have following filtering support
+    - filter by username
+    - filter by query contained in title (search by title)
+
+3. **Edit Posts** `TBD`
+
+4. **Delete Posts** `TBD`
+
+### Comments
+
+1. **Show all comments (of a user)**
+
+2. **Show all comments (under a post)**
+
+3. **Add a comment**
