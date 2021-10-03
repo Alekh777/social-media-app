@@ -12,7 +12,7 @@ async function createNewPost(userId, title, body){
 
 // showAllPosts({username: ''})
 // showAllPosts({title: ''})
-async function showAllPosts(query){
+async function findAllPosts(query){
     // TODO Handle query params here
     const posts = await Posts.findAll({
         include: [Users] // We need to include the table to use its columns (We can do this only if both Posts table and Users table have a relationship previously defined, like Users.hadMany(Posts))
@@ -22,7 +22,7 @@ async function showAllPosts(query){
 
 module.exports = {
     createNewPost,
-    showAllPosts
+    findAllPosts
 }
 
 /* Test Code */
