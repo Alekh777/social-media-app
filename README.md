@@ -17,12 +17,30 @@ flush privileges;
 ```
 
 ## Folder Structure
+
+### Backend (Server)
 ```shell
 src
 ├───controllers         # functions to connect routes to db operations
 ├───db                  # db connections and model definitions
 ├───public              # html/js/css files for static part of site
 └───routes              # express middlewares (route wise)
+```
+
+### Frontend (Client side  Code)
+```shell
+src/public
+├───app                             # our own frontend code
+│   └───social-common.js
+├───components                      # our own html snippets
+│   └───navbar.html
+├───css                             # CSS libraries e are using
+│   └───bootstrap.css
+├───index.html                      # First / home page
+└───js                              # js libraries we are using
+    ├───bootstrap.js
+    ├───jquery-3.6.0.js
+    └───popper.js
 ```
 
 ## Business Logic
