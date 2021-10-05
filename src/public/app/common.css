@@ -1,0 +1,24 @@
+#navbar {
+    position: sticky;
+    top: 0px;
+}
+
+#footer {
+    padding: 0.2rem;
+    position: sticky;
+    bottom: 0px;
+    background-color: var(--bs-gray-100);
+}
+
+#content{
+    height: 2000px;
+}
+
+.float-right{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    color: darkblue;
+}
