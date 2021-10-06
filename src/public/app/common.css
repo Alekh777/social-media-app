@@ -1,6 +1,7 @@
 #navbar {
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 #footer {
@@ -8,10 +9,6 @@
     position: sticky;
     bottom: 0px;
     background-color: var(--bs-gray-100);
-}
-
-#content{
-    height: 2000px;
 }
 
 .float-right{
